@@ -1,0 +1,15 @@
+La suma de 3 + 3 es igual a 6
+>>> 3 + 3
+6
+
+>>> from Circulo import Circulo
+>>> cosita = Circulo(2)
+>>> cosita.calcularArea()
+>>> cosita.getArea()
+12.566370616
+
+>>> from Circulo import Circulo
+>>> cosita = Circulo(2)
+>>> cosita.calcularPerimetro()
+>>> cosita.getPerimetro()
+12.566370616
