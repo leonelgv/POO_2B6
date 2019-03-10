@@ -36,10 +36,6 @@ class EstructurasControl:
                 break
         return resultado
 
-
-
-
-
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
