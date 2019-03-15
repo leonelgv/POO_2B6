@@ -12,7 +12,7 @@ class Operaciones:
         try:
             a = operador1 / operador2
             return a
-        except ZeroDivisionError as e:
+        except ZeroDivisionError:
             return 'No se puede dividir'
 
 

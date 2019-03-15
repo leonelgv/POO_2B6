@@ -15,6 +15,8 @@ class Circulo:
             self.__radio = 0
         else:
             self.__radio = radio
+        self.calcularArea()
+        self.calcularPerimetro()
 
     def calcularArea(self):
         self.__area = 3.141592654 * (self.__radio * self.__radio)
