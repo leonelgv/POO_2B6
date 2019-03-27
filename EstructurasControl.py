@@ -21,6 +21,22 @@ class EstructurasControl:
         for a in range(1,11):
             print (numero, "x", a, " = ", numero*a)
 
+    def convertirBinarioNumero(self, numero):
+        if (numero < 256):
+            res = 0
+            div = numero
+            resultado = 0
+            acumulador = 1
+            while True:
+                res = div % 2
+                div = int(div / 2)
+                resultado = res * acumulador + resultado
+                acumulador = acumulador * 10
+                if (div == 0):
+                    break
+            return resultado
+        else:
+            return 0
 
     def convertirOctalNumero(self, numero):
         res = 0
