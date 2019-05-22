@@ -1,0 +1,3 @@
+Este es un archivo de texto.
+Contiene información en texto plano.
+La información está codificada en ASCII.
