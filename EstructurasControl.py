@@ -52,6 +52,34 @@ class EstructurasControl:
                 break
         return resultado
 
+    def obtenerHexadecimalNumero(self, numero):
+        div1 = numero
+        resultado = ''
+        numHexa = ''
+        while True:
+            # Se guarda el residuo de división
+            res = div1 % 16
+            div1 = int(div1 / 16)
+            if res == 10:
+                numHexa = 'A'
+            elif res == 11:
+                numHexa = 'B'
+            elif res == 12:
+                numHexa = 'C'
+            elif res == 13:
+                numHexa = 'D'
+            elif res == 14:
+                numHexa = 'E'
+            elif res == 15:
+                numHexa = 'F'
+            else:
+                numHexa = str(res)
+            resultado = numHexa + resultado
+            if (div1 == 0):
+                break
+        return resultado
+
+
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
