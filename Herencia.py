@@ -71,9 +71,3 @@ class Rectangulo(Figura):
     def calcularPerimetro(self):
         self._perimetro = (self.__base * 2) + (self.__altura * 2)
 
-
-circulo = Circulo(23.0)
-print (circulo.getArea())
-
-cuadrado = Cuadrado(6)
-print (cuadrado.getArea())
